@@ -20,7 +20,7 @@ text = "[center]MIRROR PONG"
 [node name="NextBtn" type="Button" parent="."]
 offset_left = 154.0
 offset_top = 137.0
-offset_right = 201.0
+offset_right = 203.0
 offset_bottom = 168.0
 text = "NEXT"
 

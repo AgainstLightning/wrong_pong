@@ -30,7 +30,7 @@ func load_next_level():
 	
 func load_prev_level():
 	var prev_level_index = current_level_index - 1
-	if prev_level_index > 0:
+	if prev_level_index >= 0:
 		load_level(prev_level_index)
 
 func quit():
