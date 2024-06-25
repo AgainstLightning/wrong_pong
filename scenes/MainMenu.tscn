@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://droyoqt03fct0"]
+
+[ext_resource type="Script" path="res://scenes/MainMenu.gd" id="1_5luof"]
+[ext_resource type="FontFile" uid="uid://cm4jt2ka1qkph" path="res://resources/fonts/eclipse-v2/Eclipse.ttf" id="1_bdj43"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_5luof")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 320.0
+offset_bottom = 183.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/line_separation = -33
+theme_override_fonts/normal_font = ExtResource("1_bdj43")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center] WRONG
+PONG [/center]"
+
+[node name="PlayBtn" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 137.0
+offset_right = 201.0
+offset_bottom = 168.0
+text = "PLAY"
+
+[node name="QuitBtn" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 137.0
+offset_right = 146.0
+offset_bottom = 168.0
+text = "QUIT"
+
+[connection signal="pressed" from="Control/PlayBtn" to="." method="_on_play_btn_pressed"]
+[connection signal="pressed" from="Control/QuitBtn" to="." method="_on_quit_btn_pressed"]
