@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://cahsj1qpdrgia"]
+
+[ext_resource type="Script" path="res://resources/Level.gd" id="1_ai7i4"]
+[ext_resource type="PackedScene" uid="uid://ca7wy1v0jh0fy" path="res://scenes/levels/Mirror.tscn" id="1_egvys"]
+
+[resource]
+script = ExtResource("1_ai7i4")
+display_name = "Mirror Pong"
+subtitle = "Who's the fairest of them all"
+display_name_color = Color(1, 1, 1, 1)
+scene = ExtResource("1_egvys")

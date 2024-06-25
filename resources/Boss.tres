@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://4173we5d4mac"]
+
+[ext_resource type="Script" path="res://resources/Level.gd" id="1_13bhc"]
+[ext_resource type="PackedScene" uid="uid://cqpr1pm2jp6dr" path="res://scenes/levels/Boss.tscn" id="1_fnuns"]
+
+[resource]
+script = ExtResource("1_13bhc")
+display_name = "Boss Pong"
+subtitle = "You've done it now"
+display_name_color = Color(1, 0, 0, 1)
+scene = ExtResource("1_fnuns")

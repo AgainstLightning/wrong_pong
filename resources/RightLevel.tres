@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://bsskmdb1u203v"]
+
+[ext_resource type="Script" path="res://resources/Level.gd" id="1_hhwtq"]
+[ext_resource type="PackedScene" uid="uid://flsql8g0a6ba" path="res://scenes/levels/Right.tscn" id="1_tmf8s"]
+
+[resource]
+script = ExtResource("1_hhwtq")
+display_name = "Right Pong"
+subtitle = "Mostly as you know it"
+display_name_color = Color(1, 1, 1, 1)
+scene = ExtResource("1_tmf8s")

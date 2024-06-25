@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://brr2ktb6ictjc"]
+
+[ext_resource type="PackedScene" uid="uid://cpm666u8ha4mq" path="res://scenes/levels/Top.tscn" id="1_2etxt"]
+[ext_resource type="Script" path="res://resources/Level.gd" id="1_cyrp4"]
+
+[resource]
+script = ExtResource("1_cyrp4")
+display_name = "Top Pong"
+subtitle = "Dancing on the ceiling"
+display_name_color = Color(1, 1, 1, 1)
+scene = ExtResource("1_2etxt")
