@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://c51xrcrmo6yyq"]
+
+[ext_resource type="FontFile" uid="uid://ewknk83eaytj" path="res://resources/fonts/lato/Lato-MediumItalic.ttf" id="1_0airi"]
+[ext_resource type="Script" path="res://scenes/Results.gd" id="1_jteum"]
+[ext_resource type="FontFile" uid="uid://cym8t5tsbeead" path="res://resources/fonts/eclipse-v2/Eclipse.otf" id="3_lj3dp"]
+[ext_resource type="FontFile" uid="uid://c5f2400xn2vc7" path="res://resources/fonts/lato/Lato-Regular.ttf" id="4_36wnc"]
+
+[node name="Results" type="Node2D"]
+script = ExtResource("1_jteum")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Time" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 74.0
+offset_right = 235.0
+offset_bottom = 141.0
+theme_override_fonts/normal_font = ExtResource("1_0airi")
+theme_override_font_sizes/normal_font_size = 38
+bbcode_enabled = true
+text = "[center]99.99"
+
+[node name="MenuBtn" type="Button" parent="UI"]
+offset_left = 130.0
+offset_top = 137.0
+offset_right = 234.0
+offset_bottom = 168.0
+text = "MAIN MENU"
+
+[node name="QuitBtn" type="Button" parent="UI"]
+offset_left = 75.0
+offset_top = 137.0
+offset_right = 122.0
+offset_bottom = 168.0
+text = "QUIT"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 52.0
+theme_override_fonts/normal_font = ExtResource("3_lj3dp")
+theme_override_font_sizes/normal_font_size = 38
+bbcode_enabled = true
+text = "[center]Results"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="UI"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 43.0
+offset_right = 321.0
+offset_bottom = 66.0
+theme_override_fonts/normal_font = ExtResource("4_36wnc")
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "[center] But can you do better?"
+
+[connection signal="pressed" from="UI/MenuBtn" to="." method="_on_menu_btn_pressed"]
+[connection signal="pressed" from="UI/QuitBtn" to="." method="_on_quit_btn_pressed"]

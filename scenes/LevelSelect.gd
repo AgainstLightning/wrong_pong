@@ -13,7 +13,8 @@ func _ready():
 		grid_container.add_child(level_button)
 		
 
-func _on_return_btn_pressed(i):
+func _on_return_btn_pressed():
+	print("toggled")
 	GameManager.load_main_menu()
 
 func _on_level_btn_pressed(level_index):

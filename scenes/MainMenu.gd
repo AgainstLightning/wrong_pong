@@ -4,7 +4,7 @@ func _ready():
 	pass
 
 func _on_play_btn_pressed():
-	GameManager.load_level(0)
+	GameManager.start_game()
 
 func _on_quit_btn_pressed():
 	GameManager.quit()
