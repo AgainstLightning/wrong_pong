@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://0o3orhjrdqbi"]
+
+[ext_resource type="Script" path="res://scenes/LevelSelect.gd" id="1_parme"]
+
+[node name="LevelSelect" type="Node2D"]
+script = ExtResource("1_parme")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ReturnBtn" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 132.0
+offset_right = 34.0
+offset_bottom = 166.0
+theme_override_font_sizes/font_size = 18
+text = "<"
+
+[node name="CenterContainer" type="CenterContainer" parent="UI"]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="GridContainer" type="GridContainer" parent="UI/CenterContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="UI/CenterContainer/GridContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="UI/ReturnBtn" to="." method="_on_return_btn_pressed"]

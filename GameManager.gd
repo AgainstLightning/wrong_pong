@@ -1,5 +1,7 @@
 extends Node
 
+@onready var level_select_packed_scene: PackedScene = preload("res://scenes/LevelSelect.tscn")
+
 var current_level_index = 0
 
 @onready var main_menu_packed_scene = preload("res://scenes/MainMenu.tscn")
@@ -32,6 +34,9 @@ func load_prev_level():
 	var prev_level_index = current_level_index - 1
 	if prev_level_index >= 0:
 		load_level(prev_level_index)
+		
+func load_level_select():
+	get_tree().change_scene_to_packed(level_select_packed_scene)
 
 func quit():
 	get_tree().quit()
