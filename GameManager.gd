@@ -60,7 +60,6 @@ func load_prev_level():
 		load_level(prev_level_index)
 		
 func load_results():
-	print("hai")
 	timer.stop()
 	final_time = total_game_time
 	total_game_time = 0.0
